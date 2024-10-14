@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+
+    <title>Meubles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">MAGAZINE</a></li>
+                <li class="cart-container"><img src="images/cart Button.jpg" alt="Cart Button" class="cart-button"></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <div class="search-area">
+        <img class="search-img"><img src="images/search.jpg"></img>
+        <input type="text" placeholder="Search by name or category" id="search-input" class="search-input">
+        <div class="filter">
+            <select id="filter">
+                <option>Best match</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="grid-container">
+        <aside class="filter-sidebar">
+            <h3>FILTER BY</h3>
+            <div class="filter-section">
+                <select id="collection">
+                    <option>Collection</option>
+                </select>
+            </div>
+            <div class="filter-section">
+                <select id="collection">
+                    <option>Color</option>
+                </select>
+            </div>
+            <div class="filter-section">
+                <select id="collection">
+                    <option>Category</option>
+                </select>
+            </div>
+            
+            <div class="filter-section">
+                <label for="price">Price Range: $<span id="price-min">0</span> - $<span id="price-max">2600</span></label>
+                <div class="range-slider">
+                    <input type="range" id="range-min" min="0" max="2600" value="0" step="10">
+                    <input type="range" id="range-max" min="0" max="2600" value="1200" step="10">
+                </div>
+            </div>
+        </aside>
+        
+        <div class="product-card">
+            <img src="images/sofa.jpg" alt="Coombes" class="product-image">
+            <h4>Coombes</h4>
+            <h5>LOUNGE</h5>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <p>$2,600</p>
+            <img src="images/Add to Cart Button.jpg" alt="add to cart" class="add-to-cart">
+        </div>
+         <div class="product-card">
+            <img src="images/table.jpg" alt="Coombes" class="product-image">
+            <h4>Keeve Set</h4>
+            <h5>TABLE & CHAIRS</h5>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <p>$590</p>
+            <img src="images/Add to Cart Button.jpg" alt="add to cart" class="add-to-cart">
+        </div>
+         <div class="product-card">
+            <img src="images/armchair.jpg" alt="Coombes" class="product-image">
+            <h4>Nillè</h4>
+            <h5>ARMCHAIR</h5>
+            <div class="stars">
+                ★★★★★
+            </div>
+            <p>$950</p>
+            <img src="images/Add to Cart Button.jpg" alt="add to cart" class="add-to-cart">
+        </div>
+         <div class="product-card">
+            <img src="images/side_table.jpg" alt="Coombes" class="product-image">
+            <h4>Blanko </h4>
+            <h5>SIDE TABLE</h5>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <p>$90</p>
+            <img src="images/Add to Cart Button.jpg" alt="add to cart" class="add-to-cart">
+        </div>
+         <div class="product-card">
+            <img src="images/bookshelves.jpg" alt="Coombes" class="product-image">
+            <h4>Momo </h4>
+            <h5>SHELVES</h5>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <p>$890</p>
+            <img src="images/Add to Cart Button.jpg" alt="add to cart" class="add-to-cart">
+        </div>
+         <div class="product-card">
+            <img src="images/chair.jpg" alt="Coombes" class="product-image">
+            <h4>Penemillè</h4>
+            <h5>CHAIR</h5>
+            <div class="stars">
+                ★★★★☆ 
+            </div>
+            <p>$120</p>
+            <img src="images/Add to Cart Button.jpg" alt="add to cart" class="add-to-cart">
+        </div>
+         
+         <div class="product-card">
+            <img src="images/shelves.jpg" alt="Coombes" class="product-image">
+            <h4>Kappu</h4>
+            <h5>SHELVES</h5>
+            <div class="stars">
+                ★★★★☆ 
+            </div>
+            <p>$420</p>
+            <img src="images/Add to Cart Button.jpg" alt="add to cart" class="add-to-cart">
+        </div>
+    </div>
+    <div class="pagination1">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>></span>
+    </div>
+    
+    <div class="product-grid"></div>
+    <script src="script.js"></script>
+</body>
+</html>

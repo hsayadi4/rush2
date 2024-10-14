@@ -1,0 +1,191 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Avenir;
+}
+
+.cart-button {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 820px;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.search-input {
+    margin-left: 50px;
+    padding: 10px;
+    width: 990px;
+    border: none;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.search-img{
+    width: auto;
+    height: auto;
+}
+
+.filter-section label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.filter-section select, 
+.filter-section input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.500);
+}   
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-container h3 {
+    font-family: Avenir;
+    opacity: 50%;
+}
+
+/* Product card */
+.product-card {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px;
+    width: 250px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #000000;
+    margin-left: 200px;
+    margin-top: -85px;
+}
+
+.product-image {
+    position: relative;
+    bottom: 1px;
+    right: 0px;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+.product-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card h5 {
+    font-family: Avenir;
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.pagination1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.pagination1 span {
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.pagination1 span:first-child {
+    border: 2px solid black;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+}
+
+.range-slider {
+    position: relative;
+    width: 180px;
+    height: 15px;
+}
+
+.range-slider input[type="range"] {
+    appearance: none;
+    width: 100%;
+    position: absolute;
+    border-bottom: #00000061;
+}
+
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+    height: 2px;
+    background: #00000060; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    pointer-events: all;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    margin-top: -8px;
+}
